@@ -1,0 +1,27 @@
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe.config
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.pdb
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Form1.resources
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Properties.Resources.resources
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csproj.GenerateResource.Cache
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.exe
+E:\2017.net\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.pdb
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csprojResolveAssemblyReference.cache
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Form1.resources
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Properties.Resources.resources
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csproj.GenerateResource.Cache
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.exe
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.pdb
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe.config
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe
+F:\2017.net\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.pdb
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe.config
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.exe
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\bin\Debug\ListView 控件的使用.pdb
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csprojResolveAssemblyReference.cache
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Form1.resources
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView_控件的使用.Properties.Resources.resources
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csproj.GenerateResource.cache
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.csproj.CoreCompileInputs.cache
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.exe
+C:\Users\helen\Documents\专业课\[选修]C#\Project\实验2 Windows窗体程序开发\ListView 控件的使用\ListView 控件的使用\obj\Debug\ListView 控件的使用.pdb

@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP14F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Debug/" /Fp"Debug/DSplit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Documents and Settings\YANG\桌面\20010917\VC++图像处理程序设计配套光盘\第十二 章小波变换\Cdib.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP14F.tmp" 
+Creating temporary file "C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP150.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DSplit.pdb" /debug /machine:I386 /out:"Debug/DSplit.exe" /pdbtype:sept 
+".\Debug\Cdib.obj"
+".\Debug\DSplit.obj"
+".\Debug\DSplitDoc.obj"
+".\Debug\DSplitView.obj"
+".\Debug\DynSplitterWnd.obj"
+".\Debug\DynSplitView2.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Num.obj"
+".\Debug\StdAfx.obj"
+".\Debug\WFilter.obj"
+".\Debug\WvltTransDib.obj"
+".\Debug\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP150.tmp"
+<h3>Output Window</h3>
+Compiling...
+Cdib.cpp
+C:\Documents and Settings\YANG\桌面\20010917\VC++图像处理程序设计配套光盘\第十二 章小波变换\Cdib.cpp(233) : warning C4101: 'b' : unreferenced local variable
+C:\Documents and Settings\YANG\桌面\20010917\VC++图像处理程序设计配套光盘\第十二 章小波变换\Cdib.cpp(233) : warning C4101: 'r' : unreferenced local variable
+C:\Documents and Settings\YANG\桌面\20010917\VC++图像处理程序设计配套光盘\第十二 章小波变换\Cdib.cpp(233) : warning C4101: 'g' : unreferenced local variable
+Linking...
+Creating temporary file "C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP151.tmp" with contents
+[
+/nologo /o"Debug/DSplit.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\Cdib.sbr"
+".\Debug\DSplit.sbr"
+".\Debug\DSplitDoc.sbr"
+".\Debug\DSplitView.sbr"
+".\Debug\DynSplitterWnd.sbr"
+".\Debug\DynSplitView2.sbr"
+".\Debug\MainFrm.sbr"
+".\Debug\Num.sbr"
+".\Debug\WFilter.sbr"
+".\Debug\WvltTransDib.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\YANG\LOCALS~1\Temp\RSP151.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

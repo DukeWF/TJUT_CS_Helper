@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE 购物篮 [
+    <!ELEMENT 购物篮 ANY>
+    <!ELEMENT 肉 EMPTY>
+    <!ATTLIST 肉 品种 (鸡肉|牛肉|猪肉|鱼肉) "鸡肉">
+]>
+    <购物篮>
+        <肉 品种="鱼肉"/>
+        <肉 品种="牛肉"/>
+        <肉/>
+    </购物篮>

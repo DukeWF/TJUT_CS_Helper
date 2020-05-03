@@ -1,0 +1,9 @@
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\车牌识别系统.csprojAssemblyReference.cache
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.MainForm.resources
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\车牌识别系统.csproj.GenerateResource.cache
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\车牌识别系统.csproj.CoreCompileInputs.cache
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.exe
+C:\Users\Duke\Desktop\车牌识别系统\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.pdb

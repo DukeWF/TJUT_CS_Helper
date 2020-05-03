@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE library[
+     <!ELEMENT libarary (books,records)>
+     <!ELEMENT books (book+)>
+     <!ELEMENT book (title)>
+     <!ELEMENT title (#PCDATA)>
+     <!ELEMENT records (item+)>
+     <!ELEMENT item (data,person)>
+     <!ELEMENT data (#PCDATA)>
+ 	    <!ELEMENT person EMPTY>
+ 	    <!ATTLIST book bookid ID #REQUIRED>
+ 	    <!ATTLIST person name CDATA #REQUIRED>
+ 	    <!ATTLIST person borrowed IDREFS #REQUIRED>
+ 	]>
+<library>
+	<books>
+			<book bookid="b0101">
+				<title>Java就业培训教材</title>
+			</book>
+			<book bookid="b0102">
+				<title>Java Web开发内幕 </title>
+			</book>
+			<book bookid="b0103">
+				<title>Java开发宝典</title>
+			</book>
+	</books>
+	<records>
+		<item>
+			<data>2013-03-13</data>
+			<person name="张三" borrowed="b0101 b0103" />
+		</item>
+		<item>
+			<data>2013-05-23</data>
+			<person name="李四" borrowed="b0101 b0102 b0103" />
+		</item>
+	</records>
+</library>

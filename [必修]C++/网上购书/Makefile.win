@@ -1,0 +1,46 @@
+# Project: 网上购书
+# Makefile created by Dev-C++ 5.6.1
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = main.o buyer.o member.o layfolk.o honoured_guest.o book.o strclass.o
+LINKOBJ  = main.o buyer.o member.o layfolk.o honoured_guest.o book.o strclass.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib32" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib32" -static-libgcc -m32
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = 网上购书.exe
+CXXFLAGS = $(CXXINCS) -m32
+CFLAGS   = $(INCS) -m32
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+main.o: main.cpp
+	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)
+
+buyer.o: buyer.cpp
+	$(CPP) -c buyer.cpp -o buyer.o $(CXXFLAGS)
+
+member.o: member.cpp
+	$(CPP) -c member.cpp -o member.o $(CXXFLAGS)
+
+layfolk.o: layfolk.cpp
+	$(CPP) -c layfolk.cpp -o layfolk.o $(CXXFLAGS)
+
+honoured_guest.o: honoured_guest.cpp
+	$(CPP) -c honoured_guest.cpp -o honoured_guest.o $(CXXFLAGS)
+
+book.o: book.cpp
+	$(CPP) -c book.cpp -o book.o $(CXXFLAGS)
+
+strclass.o: strclass.cpp
+	$(CPP) -c strclass.cpp -o strclass.o $(CXXFLAGS)

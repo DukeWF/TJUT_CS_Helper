@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+                             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>chapter03</display-name>
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>default.html</welcome-file>
+		<welcome-file>default.htm</welcome-file>
+		<welcome-file>default.jsp</welcome-file>
+	</welcome-file-list>
+	<!-- 3.3 小结配置信息 -->
+	<servlet>
+		<description></description>
+		<display-name>TestServlet01</display-name>
+		<servlet-name>TestServlet01</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet01</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet01</servlet-name>
+		<url-pattern>/TestServlet01</url-pattern>
+		<!-- <url-pattern>/Test02</url-pattern> -->
+		<!-- <url-pattern>/</url-pattern> -->
+	</servlet-mapping>
+	<servlet-mapping>
+		<!--映射为Test01 -->
+		<servlet-name>TestServlet01</servlet-name>
+		<url-pattern>/Test01</url-pattern>
+	</servlet-mapping>
+
+	<!-- 3.4.1 小结配置信息 -->
+	<servlet>
+		<servlet-name>TestServlet02</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet02</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>UTF-8</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet02</servlet-name>
+		<url-pattern>/TestServlet02</url-pattern>
+	</servlet-mapping>
+
+	<!-- 3.4.2 配置信息 -->
+	<context-param>
+		<param-name>companyName</param-name>
+		<param-value>itcast</param-value>
+	</context-param>
+	<context-param>
+		<param-name>address</param-name>
+		<param-value>beijing</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>TestServlet03</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet03</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet03</servlet-name>
+		<url-pattern>/TestServlet03</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>TestServlet04</display-name>
+		<servlet-name>TestServlet04</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet04</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet04</servlet-name>
+		<url-pattern>/TestServlet04</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<description></description>
+		<display-name>TestServlet05</display-name>
+		<servlet-name>TestServlet05</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet05</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet05</servlet-name>
+		<url-pattern>/TestServlet05</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<description></description>
+		<display-name>TestServlet06</display-name>
+		<servlet-name>TestServlet06</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet06</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>TestServlet06</servlet-name>
+		<url-pattern>/TestServlet06</url-pattern>
+	</servlet-mapping>
+
+</web-app>

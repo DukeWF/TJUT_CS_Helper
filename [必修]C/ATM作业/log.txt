@@ -1,0 +1,47 @@
+20152172 try to sign in the system.
+0 password error in 1 times.
+0 password error in 2 times.
+0 password error in 3 times.
+0 The count has been frazed!
+20152180 try to sign in the system.
+0 password error in 1 times.
+0 password error in 2 times.
+0 password error in 3 times.
+0 The count has been frazed!
+20152111 try to sign in the system.
+0 password error in 1 times.
+0 password error in 2 times.
+0 password error in 3 times.
+0 The count has been frazed!
+20152180 try to sign in the system.
+20152180 password error in 1 times.
+20152180 password error in 2 times.
+20152180 password error in 3 times.
+20152180 The count has been frazed!
+20152180 try to sign in the system.
+20152180 was stopped to sign in the system.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.
+0 deposit money 100 succeed.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.
+0 check the money.
+0 change password succeed.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.
+0 check the money.
+0 deposit money 100 succeed.
+0 draw money 1 succeed.
+0 check the money.
+0 change password error.
+0 change password succeed.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.
+0 draw money 100 error.
+0 deposit money 1000 succeed.
+0 draw money 100 succeed.
+0 change password succeed.
+20152180 try to sign in the system.
+20152180 sign in the system succeed.

@@ -1,0 +1,29 @@
+﻿  StdAfx.cpp
+  _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+  TeXiaoXianShiDib.cpp
+  MainFrm.cpp
+  DynSplitView2.cpp
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(532): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(540): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(540): error C2228: “.x”的左边必须有类/结构/联合
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(541): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(541): error C2228: “.y”的左边必须有类/结构/联合
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(559): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(567): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(567): error C2228: “.x”的左边必须有类/结构/联合
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(568): error C2065: “mi”: 未声明的标识符
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dynsplitview2.cpp(568): error C2228: “.y”的左边必须有类/结构/联合
+  DynSplitterWnd.cpp
+  DSplitView.cpp
+  DSplitDoc.cpp
+  DSplit.cpp
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\dsplit.cpp(58): warning C4996: 'CWinApp::Enable3dControls': CWinApp::Enable3dControls is no longer needed. You should remove this call.
+  c:\program files (x86)\microsoft visual studio\2017\community\vc\tools\msvc\14.13.26128\atlmfc\include\afxwin.h(5229): note: 参见“CWinApp::Enable3dControls”的声明
+  DlgArea.cpp
+  CDIB.CPP
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\cdib.cpp(24): warning C4244: “初始化”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\cdib.cpp(19): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(132): note: 参见“strcpy”的声明
+c:\users\helen\documents\专业课\[必修]数字图像处理\vc++图像处理程序设计配套光盘\2_特效显示\cdib.cpp(144): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.16299.0\ucrt\string.h(132): note: 参见“strcpy”的声明
+  正在生成代码...

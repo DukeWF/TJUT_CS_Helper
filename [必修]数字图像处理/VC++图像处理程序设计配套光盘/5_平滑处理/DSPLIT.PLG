@@ -1,0 +1,80 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/DSplit.res" /d "NDEBUG" /d "_AFXDLL" "E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DSplit.rc"" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP24.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/DSplit.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\Cdib.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DSplit.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DSplitDoc.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DSplitView.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DynSplitterWnd.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\DynSplitView2.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\MainFrm.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\NNJUNZHI.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\THREETHREEJUNZHI.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\XiaoChuHeiDian.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP24.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP25.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/DSplit.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP25.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP26.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/DSplit.pdb" /machine:I386 /out:"Release/DSplit.exe" 
+".\Release\Cdib.obj"
+".\Release\DSplit.obj"
+".\Release\DSplitDoc.obj"
+".\Release\DSplitView.obj"
+".\Release\DynSplitterWnd.obj"
+".\Release\DynSplitView2.obj"
+".\Release\MainFrm.obj"
+".\Release\NNJUNZHI.obj"
+".\Release\StdAfx.obj"
+".\Release\THREETHREEJUNZHI.obj"
+".\Release\XiaoChuHeiDian.obj"
+".\Release\ZaoShengXiaoChuDib.obj"
+".\Release\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP26.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Cdib.cpp
+DSplit.cpp
+DSplitDoc.cpp
+DSplitView.cpp
+DynSplitterWnd.cpp
+DynSplitView2.cpp
+MainFrm.cpp
+NNJUNZHI.cpp
+THREETHREEJUNZHI.cpp
+XiaoChuHeiDian.cpp
+ZaoShengXiaoChuDib.cpp
+E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp(324) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp(326) : warning C4244: '=' : conversion from 'float' to 'unsigned char', possible loss of data
+E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp(350) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp(354) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+E:\各种资料\VC++图像处理程序设计配套光盘\第五章平滑处理\ZaoShengXiaoChuDib.cpp(358) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 5 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/DSplit.res" /d "NDEBUG" /d "_AFXDLL" "C:\Documents and Settings\YANG\桌面\20010917\VC++图像处理程序设计配套光盘\第九章图像的变换域处理\频域滤波\DSplit.rc"" 
+Creating temporary file "C:\DOCUME~1\YANG\LOCALS~1\Temp\RSPF1.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/DSplit.pdb" /machine:I386 /out:"Release/DSplit.exe" 
+".\Release\Cdib.obj"
+".\Release\Dialog1.obj"
+".\Release\Dialog2.obj"
+".\Release\Dialog3.obj"
+".\Release\DSplit.obj"
+".\Release\DSplitDoc.obj"
+".\Release\DSplitView.obj"
+".\Release\DynSplitterWnd.obj"
+".\Release\DynSplitView2.obj"
+".\Release\MainFrm.obj"
+".\Release\PinYuLuBoDib.obj"
+".\Release\StdAfx.obj"
+".\Release\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\YANG\LOCALS~1\Temp\RSPF1.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

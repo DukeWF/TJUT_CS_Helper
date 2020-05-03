@@ -1,0 +1,37 @@
+# Project: DynamicCastingDemo
+# Makefile created by Dev-C++ 5.6.0
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = AbstractGeometricObject.o DerivedCircle2.o Rectangle2.o DynamicCastingDemo.o
+LINKOBJ  = AbstractGeometricObject.o DerivedCircle2.o Rectangle2.o DynamicCastingDemo.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
+BIN      = DynamicCastingDemo.exe
+CXXFLAGS = $(CXXINCS) -Og -g3 -fverbose-asm
+CFLAGS   = $(INCS) -Og -g3 -fverbose-asm
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+AbstractGeometricObject.o: AbstractGeometricObject.cpp
+	$(CPP) -c AbstractGeometricObject.cpp -o AbstractGeometricObject.o $(CXXFLAGS)
+
+DerivedCircle2.o: DerivedCircle2.cpp
+	$(CPP) -c DerivedCircle2.cpp -o DerivedCircle2.o $(CXXFLAGS)
+
+Rectangle2.o: Rectangle2.cpp
+	$(CPP) -c Rectangle2.cpp -o Rectangle2.o $(CXXFLAGS)
+
+DynamicCastingDemo.o: DynamicCastingDemo.cpp
+	$(CPP) -c DynamicCastingDemo.cpp -o DynamicCastingDemo.o $(CXXFLAGS)

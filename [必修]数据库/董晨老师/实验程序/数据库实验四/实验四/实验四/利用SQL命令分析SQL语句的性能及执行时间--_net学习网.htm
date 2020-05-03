@@ -1,0 +1,408 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!-- saved from url=(0031)http://www.lmwlove.com/ac/ID671 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><HTML 
+xmlns="http://www.w3.org/1999/xhtml"><HEAD><META content="IE=11.0000" 
+http-equiv="X-UA-Compatible">
+<TITLE>	 利用SQL命令分析SQL语句的性能及执行时间--.net学习网 </TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=utf-8"><LINK href="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/index.css" 
+rel="stylesheet" type="text/css"><LINK href="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/layout.css" 
+rel="stylesheet" type="text/css"><LINK href="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/web.css" 
+rel="Stylesheet" type="text/css">         
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/JScript.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/wb.js" type="text/javascript" charset="utf-8"></SCRIPT>
+     
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/jquery.min.js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "//hm.baidu.com/hm.js?7abd054918196ba84749884bd32b78c3";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </SCRIPT>
+ 
+<META name="description" content="利用SQL命令分析SQL语句的性能及执行时间">
+<META name="keywords" content="利用SQL命令分析SQL语句的性能及执行时间">
+<META name="GENERATOR" content="MSHTML 11.00.9600.17420"></HEAD> 
+<BODY>
+<FORM name="aspnetForm" id="aspnetForm" onsubmit="javascript:return WebForm_OnSubmit();" 
+action="/ac/ID671" method="post">
+<DIV><INPUT name="__EVENTTARGET" id="__EVENTTARGET" type="hidden"> <INPUT name="__EVENTARGUMENT" id="__EVENTARGUMENT" type="hidden"> 
+<INPUT name="__VIEWSTATE" id="__VIEWSTATE" type="hidden" value="/wEPDwUKLTM3MzA4MTQzOWRkTiahjyze0gqtqFlBvs7SBomZeis="> 
+</DIV>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['aspnetForm'];
+if (!theForm) {
+    theForm = document.aspnetForm;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</SCRIPT>
+ 
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/WebResource.js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/WebResource(1).js" type="text/javascript"></SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+//<![CDATA[
+function WebForm_OnSubmit() {
+if (typeof(ValidatorOnSubmit) == "function" && ValidatorOnSubmit() == false) return false;
+return true;
+}
+//]]>
+</SCRIPT>
+ 
+<DIV><INPUT name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" type="hidden" value="61684445">
+	 <INPUT name="__EVENTVALIDATION" id="__EVENTVALIDATION" type="hidden" value="/wEWBQLoyKqHDQKWo9+lBQKr/+y4AgLB//CjDwKh9rGpDzx+wE9xoITPyG/36dpltFgyxsT3"> 
+</DIV>
+<DIV class="top">
+<DIV class="top_div">
+<P class="left text1">欢迎来到.net学习网                 </P>
+<P class="attentio"><wb:follow-button height="24" width="136" type="red_2" uid="3230100920"></wb:follow-button> 
+                </P>
+<P class="right" style="color: red; padding-right: 10px;">                    
+欢迎联系站长一起更新本网站！QQ:879621940                 </P></DIV></DIV>
+<DIV class="clearfix"></DIV>
+<DIV class="header">
+<DIV class="logo left"><IMG 
+src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/logo.png">             </DIV>
+<UL class="ad1 right">
+  <LI class="mr15"><A href="http://www.lmwlove.com/Product/erp.html" target="_blank"><IMG 
+  src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/sderp.gif"></A>                 
+  </LI></UL>
+<DIV class="clearfix"></DIV></DIV>
+<DIV class="nav">
+<UL class="menu">
+  <LI><A href="http://www.lmwlove.com/">首页</A></LI>
+  <LI><A href="http://www.lmwlove.com/ab/CatalogID1">.NET</A></LI>
+  <LI><A href="http://www.lmwlove.com/ab/CatalogID6">SQLServer</A></LI>
+  <LI><A href="http://www.lmwlove.com/ab/CatalogID11">Web设计</A></LI>
+  <LI><A href="http://www.lmwlove.com/ab/CatalogID18">软件测试</A></LI>
+  <LI><A href="http://www.lmwlove.com/ad">专题教程</A></LI>
+  <LI><A href="http://www.lmwlove.com/ag">教程下载</A></LI>
+  <LI><A href="http://www.lmwlove.com/Product/erp.html" 
+  target="_blank">商道ERP</A></LI></UL></DIV>
+<DIV class="search">
+<DIV class="search_form"><INPUT class="input left" id="keytext" onfocus="clearkey()" onblur="setdefault()" type="text" value="输入关键字"> 
+                <BUTTON class="button right" onclick="search()" 
+type="button"></BUTTON>                 
+<DIV class="clearfix"></DIV></DIV>
+<UL class="notice left">
+  <LI><SPAN class="fw">热点搜索：</SPAN></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=sql" 
+  target="_blank" rel="nofollow">sql</A></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=%e6%95%b0%e6%8d%ae%e5%ba%93" 
+  target="_blank" rel="nofollow">数据库</A></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=%e8%a7%a6%e5%8f%91%e5%99%a8" 
+  target="_blank" rel="nofollow">                            触发器</A></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=%e5%a4%96%e9%94%ae%e7%ba%a6%e6%9d%9f" 
+  target="_blank" rel="nofollow">                            外键约束</A></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=gridview" 
+  target="_blank" rel="nofollow">gridview</A></LI>
+  <LI><A href="http://www.lmwlove.com/Article/ArticleSearchList.aspx?keys=excel" 
+  target="_blank" rel="nofollow">                            excel</A></LI></UL>
+<DIV class="clearfix"></DIV></DIV><!--location-->     
+<DIV id="location">
+<H3>您当前所在位置：<A href="http://www.lmwlove.com/Default.aspx">首页</A>&nbsp;»&nbsp;<A 
+id="ctl00_Content_hy_nav" 
+href="http://www.lmwlove.com/ab/ParentID6_CatalogID10">SQLServer教程</A>&nbsp;»&nbsp;正文 
+        </H3></DIV><!--end location-->     <!--contain-->     
+<DIV id="contain"><!--side-->         
+<DIV class="side left">
+<UL class="navgation">
+  <LI class="bd999"><A 
+  href="http://www.lmwlove.com/ab/ParentID6_CatalogID9">Sql随手笔记</A></LI>
+  <LI class="bd999"><A 
+  href="http://www.lmwlove.com/ab/ParentID6_CatalogID10">SQLServer教程</A></LI></UL>
+<DIV class="download mt10">
+<DIV class="download_title">
+<H3>                        热门阅读                     </H3></DIV>
+<UL class="end_list end_list10 fix">
+  <LI><A title="修改计算机名称后，如何修改服务器上TFS的映射工作区" href="http://www.lmwlove.com/ac/ID1142" 
+  target="_blank">                                
+  修改计算机名称后，如何修改服务器上TFS的映射工作区</A></LI>                                            
+           
+  <LI><A title="诚聘.net开发顾问" href="http://www.lmwlove.com/ac/ID1141" target="_blank"> 
+                                 诚聘.net开发顾问</A></LI>                             
+                          
+  <LI><A title="程序猿才懂得幽默" href="http://www.lmwlove.com/ac/ID1143" target="_blank"> 
+                                 程序猿才懂得幽默</A></LI>                               
+                        
+  <LI><A title='Win7中"已禁用对分布式事务管理器(MSDTC)的网络访问。请使用组件服务管理工具启用 DTC 以便在 MSDTC 安全配置中进行网络访问。"' 
+  href="http://www.lmwlove.com/ac/ID1144" 
+  target="_blank">Win7中"已禁用对分布式事务管理器(MSDTC)的网络访问。请使用组件服务管理工具启用 DTC 以便在 MSDTC 
+  安全配置中进行网络访问。"</A></LI>                                                     
+  <LI><A title="Html5中Canvas使用方法" href="http://www.lmwlove.com/ac/ID1148" 
+  target="_blank">Html5中Canvas使用方法</A></LI>                                      
+     </UL></DIV>
+<DIV class="download mt10">
+<DIV class="download_title"><I class="left">最新技术</I>                 </DIV>
+<UL class="download_list fix">
+  <LI><A title="Html5中Canvas使用方法" href="http://www.lmwlove.com/ac/ID1148" 
+  target="_blank">Html5中Canvas使用方法</A></LI>
+  <LI><A title='Win7中"已禁用对分布式事务管理器(MSDTC)的网络访问。请使用组件服务管理工具启用 DTC 以便在 MSDTC 安全配置中进行网络访问。"' 
+  href="http://www.lmwlove.com/ac/ID1144" 
+  target="_blank">Win7中"已禁用对分布式事务管理器(MSDTC)的网络访问。请使用组件服务管理工具启用 DTC 以便在 MSDTC 
+  安全配置中进行网络访问。"</A></LI>
+  <LI><A title="程序猿才懂得幽默" href="http://www.lmwlove.com/ac/ID1143" target="_blank">程序猿才懂得幽默</A></LI>
+  <LI><A title="修改计算机名称后，如何修改服务器上TFS的映射工作区" href="http://www.lmwlove.com/ac/ID1142" 
+  target="_blank">                                
+  修改计算机名称后，如何修改服务器上TFS的映射工作区</A></LI>
+  <LI><A title="诚聘.net开发顾问" href="http://www.lmwlove.com/ac/ID1141" target="_blank"> 
+                                 诚聘.net开发顾问</A></LI>
+  <LI><A title="学会说“不” 把时间用在更重要的事情上" href="http://www.lmwlove.com/ac/ID1139" 
+  target="_blank">                                学会说“不” 把时间用在更重要的事情上</A></LI>
+  <LI><A title="程序猿媳妇儿注意事项" href="http://www.lmwlove.com/ac/ID1138" target="_blank"> 
+                                 程序猿媳妇儿注意事项</A></LI>
+  <LI><A title="MVC架构设计—EF-Code First：数据查询" href="http://www.lmwlove.com/ac/ID1137" 
+  target="_blank">MVC架构设计—EF-Code First：数据查询</A></LI>
+  <LI><A title="CSS字体大小: em与px、pt、百分比之间的对比" href="http://www.lmwlove.com/ac/ID1136" 
+  target="_blank">CSS字体大小: em与px、pt、百分比之间的对比</A></LI>
+  <LI><A title="自己的薪水自己救：跟新创公司谈待遇的三大心法" href="http://www.lmwlove.com/ac/ID1135" 
+  target="_blank">                                
+自己的薪水自己救：跟新创公司谈待遇的三大心法</A></LI></UL></DIV>
+<DIV class="download mt10">
+<DIV class="download_title"><I class="left">最新下载</I>                 </DIV>
+<UL class="download_list fix">
+  <LI><A title="简单验证码的识别工具源码下载" href="http://www.lmwlove.com/ah/ID76" target="_blank"> 
+                                 简单验证码的识别工具源码下载</A></LI>
+  <LI><A title="WCF双工通信演示实例下载" href="http://www.lmwlove.com/ah/ID75" target="_blank">WCF双工通信演示实例下载</A></LI>
+  <LI><A title="一个简单的完整WCF示例下载" href="http://www.lmwlove.com/ah/ID74" target="_blank"> 
+                                 一个简单的完整WCF示例下载</A></LI>
+  <LI><A title="简单好用的asp.net颜色选择控件下载" href="http://www.lmwlove.com/ah/ID73" 
+  target="_blank">                                简单好用的asp.net颜色选择控件下载</A></LI>
+  <LI><A title="在winform中加载Google地图示例" href="http://www.lmwlove.com/ah/ID72" 
+  target="_blank">                                在winform中加载Google地图示例</A></LI>
+  <LI><A title="C#锁屏(挂机锁)源码下载" href="http://www.lmwlove.com/ah/ID71" target="_blank">C#锁屏(挂机锁)源码下载</A></LI>
+  <LI><A title="集成到VS工具栏的代码生成器下载" href="http://www.lmwlove.com/ah/ID70" target="_blank"> 
+                                 集成到VS工具栏的代码生成器下载</A></LI>
+  <LI><A title="简单好用的纯js软键盘源码下载" href="http://www.lmwlove.com/ah/ID69" target="_blank"> 
+                                 简单好用的纯js软键盘源码下载</A></LI>
+  <LI><A title="C#学习课件 第12章 多媒体应用程序开发 " href="http://www.lmwlove.com/ah/ID68" 
+  target="_blank">C#学习课件 第12章 多媒体应用程序开发 </A></LI>
+  <LI><A title="C#学习课件 第11章 GDI+与图形编程" href="http://www.lmwlove.com/ah/ID67" 
+  target="_blank">C#学习课件 第11章 GDI+与图形编程</A></LI></UL></DIV>
+<DIV class="download mt10">
+<DIV class="download_title"><I class="left">最新评论</I>                 </DIV>
+<UL class="download_list fix">
+  <LI><A title="好棒的方法，" href="http://www.lmwlove.com/ac/ID648" target="_blank">  
+                                好棒的方法，</A></LI>
+  <LI><A title="不错" href="http://www.lmwlove.com/ac/ID724" target="_blank">      
+                            不错</A></LI>
+  <LI><A title="旧旧是" href="http://www.lmwlove.com/ac/ID1141" target="_blank">    
+                              旧旧是</A></LI>
+  <LI><A title="你没考虑过内存溢出吗?" href="http://www.lmwlove.com/ac/ID488" target="_blank"> 
+                                 你没考虑过内存溢出吗?</A></LI>
+  <LI><A title="纯机器翻译过来的" href="http://www.lmwlove.com/ac/ID1129" target="_blank">纯机器翻译过来的</A></LI>
+  <LI><A title="学习了，感谢分享" href="http://www.lmwlove.com/ac/ID943" 
+  target="_blank">                                学习了，感谢分享</A></LI>
+  <LI><A title="大神，我又来了，在后台获取SmartGrid数据源的时候，获取的datatable数据顺序和前台的不一样，这个有处理过吗。" 
+  href="http://www.lmwlove.com/ac/ID783" target="_blank">                        
+          大神，我又来了，在后台获取SmartGrid数据源的时候，获取的datatable数据顺序和前台的不</A></LI>
+  <LI><A title="bgf" href="http://www.lmwlove.com/ac/ID858" 
+  target="_blank">bgf</A></LI>
+  <LI><A title="<" href="http://www.lmwlove.com/ac/ID88" target="_blank">        
+                          &lt;</A></LI>
+  <LI><A title="对你表示无语" href="http://www.lmwlove.com/ac/ID832" 
+  target="_blank">对你表示无语</A></LI>
+  <LI><A title='看了开始就发现你的理解是错误的。_tempStr  是引用类型  "Blue"是字符串也是引用类型。  _tempStr复制更改的是引用而不是值。 本来就不改text 的。 可笑的是拘泥了解有个神马新技术不知道你从哪儿扯出来的这莫须有的技术。 误人啊。' 
+  href="http://www.lmwlove.com/ac/ID832" target="_blank">                        
+          看了开始就发现你的理解是错误的。_tempStr  是引用类型  "Blue"是字符串也是引用类型。</A></LI>
+  <LI><A title="太不智能了，用safehelper吧，开源的类库，好用！" href="http://www.lmwlove.com/ac/ID767" 
+  target="_blank">                                
+  太不智能了，用safehelper吧，开源的类库，好用！</A></LI>
+  <LI><A title="总结的非常好" href="http://www.lmwlove.com/ac/ID887" target="_blank">  
+                                总结的非常好</A></LI>
+  <LI><A title="学习了" href="http://www.lmwlove.com/ac/ID943" target="_blank">     
+                             学习了</A></LI>
+  <LI><A title="是的是的，还是你看的仔细啊。但这不影响示例的意思，多包涵！" href="http://www.lmwlove.com/ac/ID958" 
+  target="_blank">                                
+  是的是的，还是你看的仔细啊。但这不影响示例的意思，多包涵！</A></LI></UL></DIV></DIV><!--end side-->         <!--main--> 
+        
+<DIV class="main right">
+<DIV class="main_div1 pb15">
+<H2>                    利用SQL命令分析SQL语句的性能及执行时间</H2>
+<DIV class="come_share fix">
+<DIV class="detail_other left pl20 mr10"><SPAN>                            
+创建时间：2011年11月12日 15:34</SPAN><SPAN>阅读次数：(1843)</SPAN></DIV>
+<DIV class="bdshare_t bds_tools get-codes-bdshare" id="bdshare"><SPAN class="bds_more">分享到：</SPAN><A 
+class="bds_qzone"></A><A class="bds_tsina"></A><A class="bds_tqq"></A><A class="bds_renren"></A><A 
+class="shareCount"></A></DIV></DIV>
+<DIV class="content">SQL语句执行的慢了，我们除了可以从SQL的执行计划上分析SQL的效率外,相关内容请查看本站以下文章：<BR><A 
+class="content_href" href="http://www.lmwlove.com/ac/ID608" 
+target="_blank">利用showplan_all查看sql详细执行计划</A><BR><A class="content_href" href="http://www.lmwlove.com/ac/ID569" 
+target="_blank">SQL&nbsp;Server性能调优之执行计划深度剖析</A><BR>我们是不是还可以输出更加详细的执行清单呢？本章我们就讨论如果利用SQL命令来输出更加详细的SQL执行明细：<BR><BR>我们知道，sql&nbsp;server在每次执行sql命令后，都会将该命令放入缓冲区，以便下次更加高效的调用该命令，所以，在测试前，我们要用DROPCLEANBUFFERS命令来删除所有缓冲数据，以便测试出后续的SQL执行情况。<BR>从缓冲池中删除所有清除缓冲区命令：<BR>
+<DIV 
+class="code">DBCC&nbsp;DROPCLEANBUFFERS</DIV><BR><BR>除了清除缓冲区所有的命令，还要清空缓存下来的所有执行计划，我们都知道，SQL&nbsp;SERVER2005为我们的每条SQL语句都会生成一个执行计划，为了避免sql&nbsp;server使用了错误的执行计划，我们在测试前应该清除所有缓存起来的执行计划,清除所有执行计划的语句：<BR>
+<DIV 
+class="code">DBCC&nbsp;FREEPROCCACHE</DIV><BR><BR>清空了sql中所有的缓存数据后，我们要开始测试sql语句了。先来了解两个命令：<BR>1,SET&nbsp;STATISTICS&nbsp;IO&nbsp;{&nbsp;ON&nbsp;|&nbsp;OFF&nbsp;}<BR>该命令使SQL&nbsp;Server显示有关由Transact-SQL语句生成的磁盘活动量的信息。如果将此选项设置为ON，则所有后续的Transact-SQL语句将返回统计信息，直到将该选项设置为OFF为止。<BR><BR>2,SET&nbsp;STATISTICS&nbsp;TIME&nbsp;{&nbsp;ON&nbsp;|&nbsp;OFF&nbsp;}<BR>显示分析、编译和执行各语句所需的毫秒数。当SET&nbsp;STATISTICS&nbsp;TIME为ON时，会显示语句的时间统计信息。为OFF时，不显示时间统计信息。<BR><BR>好了，综合上面的信息，我们开始测试select&nbsp;*&nbsp;from&nbsp;v_Produce_ReqGoodsDetail语句的执行明细.<BR>命令：<BR>
+<DIV 
+class="code">dbcc&nbsp;dropcleanbuffers<BR>dbcc&nbsp;freeproccache<BR><BR>set&nbsp;statistics&nbsp;io&nbsp;on&nbsp;<BR>set&nbsp;statistics&nbsp;time&nbsp;on&nbsp;<BR>go&nbsp;<BR>select&nbsp;*&nbsp;from&nbsp;v_Produce_ReqGoodsDetail<BR>go&nbsp;<BR>set&nbsp;statistics&nbsp;io&nbsp;off&nbsp;<BR>set&nbsp;statistics&nbsp;time&nbsp;off</DIV><BR><BR>输出结果：<BR>DBCC&nbsp;执行完毕。如果&nbsp;DBCC&nbsp;输出了错误信息，请与系统管理员联系。<BR>DBCC&nbsp;执行完毕。如果&nbsp;DBCC&nbsp;输出了错误信息，请与系统管理员联系。<BR><BR>SQL&nbsp;Server&nbsp;分析和编译时间:&nbsp;&nbsp;CPU&nbsp;时间&nbsp;=&nbsp;15&nbsp;毫秒，占用时间&nbsp;=&nbsp;256&nbsp;毫秒。<BR><BR>(108&nbsp;行受影响)<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;0，逻辑读取&nbsp;0&nbsp;次，物理读取&nbsp;0&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;0，逻辑读取&nbsp;622&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;56&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;0，逻辑读取&nbsp;8&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;217&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;217&nbsp;次，物理读取&nbsp;0&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;324&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;0，逻辑读取&nbsp;216&nbsp;次，物理读取&nbsp;2&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;0，逻辑读取&nbsp;216&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;4&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;8&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;2&nbsp;次，物理读取&nbsp;2&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;1，逻辑读取&nbsp;2&nbsp;次，物理读取&nbsp;1&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR>表&nbsp;'视图中用到的表名'。扫描计数&nbsp;14，逻辑读取&nbsp;29&nbsp;次，物理读取&nbsp;2&nbsp;次，预读&nbsp;0&nbsp;次，lob&nbsp;逻辑读取&nbsp;0&nbsp;次，lob&nbsp;物理读取&nbsp;0&nbsp;次，lob&nbsp;预读&nbsp;0&nbsp;次。<BR><BR>SQL&nbsp;Server&nbsp;执行时间:&nbsp;CPU&nbsp;时间&nbsp;=&nbsp;16&nbsp;毫秒，占用时间&nbsp;=&nbsp;111&nbsp;毫秒。<BR>SQL&nbsp;Server&nbsp;分析和编译时间:&nbsp;&nbsp;CPU&nbsp;时间&nbsp;=&nbsp;0&nbsp;毫秒，占用时间&nbsp;=&nbsp;1&nbsp;毫秒。<BR>SQL&nbsp;Server&nbsp;执行时间:&nbsp;CPU&nbsp;时间&nbsp;=&nbsp;0&nbsp;毫秒，占用时间&nbsp;=&nbsp;1&nbsp;毫秒。<BR><BR>解释一下输出结果：<BR><STRONG>cpu时间</STRONG>：这个语句占用的处理器时间.<BR><STRONG>占用时间</STRONG>：除了cpu要用时间外,存储器中的数据存取,磁盘IO,总线上的等待等等,占用时间就是为执行该SQL语句所用的总共时间.&nbsp;<BR><BR><STRONG>逻辑读取</STRONG>：从数据缓存读取的页数<BR><STRONG>物理读取:</STRONG>：从磁盘读取的页数<BR><STRONG>预读</STRONG>：为进行查询而放入缓存的页数<BR><STRONG>lob&nbsp;逻辑读取</STRONG>：从数据缓存读取的&nbsp;text、ntext、image&nbsp;或大值类型&nbsp;(varchar(max)、nvarchar(max)、varbinary(max))&nbsp;页的数目。<BR><STRONG>lob物理读取</STRONG>：从磁盘读取的&nbsp;text、ntext、image&nbsp;或大值类型页的数目。<BR><STRONG>lob预读</STRONG>：为进行查询而放入缓存的&nbsp;text、ntext、image&nbsp;或大值类型页的数目。<BR><BR>到此为止，我们就可以从以上的输出结果中很好的分析出我们的SQL命令的性能情况了。 
+                    
+<DIV class="mt10 detail_other_2 green f14">                        
+来源：.net学习网<BR>                        说明：所有来源为 <FONT style="color: rgb(0, 0, 0);">.net学习网</FONT> 
+的文章均为原创，如有转载，请在转载处标注本页地址，谢谢！                     </DIV>
+<DIV class="f14" style="float: right;">                        【编辑：<SPAN id="ctl00_Content_Author">Wyf</SPAN>】 
+                    </DIV>
+<DIV class="clearfix"></DIV>
+<DIV class="pageup">
+<P><A class="list" id="ctl00_Content_PreNextNavigation_hl_pre" href="http://www.lmwlove.com/ac/ID670">上一篇：SQL 
+SERVER存储单元页与区详解</A></P>
+<P><A class="list" id="ctl00_Content_PreNextNavigation_hl_next" href="http://www.lmwlove.com/ac/ID690">下一篇：利用sys.dm_db_index_physical_stats查看索引碎片等数据</A></P></DIV></DIV></DIV>
+<DIV class="main_div3 mt10">
+<DIV class="main_div3_title">
+<H3 class="left">            相关阅读</H3></DIV>
+<DIV class="main_div3_list fix">
+<UL class="main_div3_list_l fix">
+  <LI><A title="SQL Server中排名函数row_number,rank,dense_rank,ntile详解" href="http://www.lmwlove.com/ac/ID669" 
+  target="_blank">SQL Server中排名函数row_number,rank,dense_rank,ntile详解</A> </LI>
+  <LI><A title="如何利用SQL创建与修改列的说明信息(备注信息)详解" href="http://www.lmwlove.com/ac/ID666" 
+  target="_blank">                        如何利用SQL创建与修改列的说明信息(备注信息)详解</A> </LI>
+  <LI><A title="SQL SERVER中自增量(标识列)重复原因分析" href="http://www.lmwlove.com/ac/ID663" 
+  target="_blank">SQL SERVER中自增量(标识列)重复原因分析</A> </LI>
+  <LI><A title="Sql Server中truncate table与delete语句的区别" href="http://www.lmwlove.com/ac/ID658" 
+  target="_blank">Sql Server中truncate table与delete语句的区别</A> </LI>
+  <LI><A title="SQL SERVER数据库状态(脱机,联机,可疑)及SQL设置语句详解" href="http://www.lmwlove.com/ac/ID650" 
+  target="_blank">SQL SERVER数据库状态(脱机,联机,可疑)及SQL设置语句详解</A> </LI></UL></DIV></DIV>
+<DIV class="main_div3 mt10">
+<DIV class="main_div3_title">
+<H3 class="left">            最新评论</H3></DIV>
+<DIV class="comment"><STRONG>共有评论0条</STRONG>         
+<DIV id="div_wait" style="-ms-word-break: break-all;">
+<UL>
+  <LI class="comment_content">暂无任何评论，请留下您对本文章的看法，共同参入讨论！</LI></UL></DIV>
+<DIV id="div_comment"></DIV>
+<DIV style="border: currentColor; border-image: none; font-weight: bold;">       
+     发表评论：         </DIV>
+<DIV>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>                        留言人：<INPUT name="ctl00$Content$Comment1$Creator" id="ctl00_Content_Comment1_Creator" type="text"> 
+                          </TD></TR>
+  <TR>
+    <TD>内&nbsp;&nbsp;容：<TEXTAREA name="ctl00$Content$Comment1$Content" id="ctl00_Content_Comment1_Content" rows="6" cols="60"></TEXTAREA> 
+                              <SPAN id="ctl00_Content_Comment1_RequiredFieldValidator1" 
+      style="color: red; display: none;">*</SPAN>                     </TD></TR>
+  <TR>
+    <TD style="padding-top: 5px;">请输入问题&nbsp;<SPAN id="ctl00_Content_Comment1_question" 
+      style="color: green;">69+69=?</SPAN>&nbsp;的结果(结果是：<SPAN id="ctl00_Content_Comment1_answer" 
+      style="color: red;">138</SPAN>)                     </TD></TR>
+  <TR>
+    <TD>结&nbsp;&nbsp;果：<INPUT name="ctl00$Content$Comment1$txt_answer" id="ctl00_Content_Comment1_txt_answer" style="width: 50px;" type="text"> 
+                              <SPAN id="ctl00_Content_Comment1_RequiredFieldValidator2" 
+      style="color: red; display: none;">*</SPAN>                     </TD></TR>
+  <TR>
+    <TD><INPUT name="ctl00$Content$Comment1$btn_sure" id="ctl00_Content_Comment1_btn_sure" onclick='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$Content$Comment1$btn_sure", "", true, "", "", false, false))' type="submit" value="发表评论"> 
+                          </TD></TR></TBODY></TABLE></DIV></DIV></DIV></DIV><!--end main--> 
+        
+<DIV class="clearfix"></DIV></DIV><!--end contain-->         
+<HR class="line">
+
+<DIV class="footer">
+<P><A href="http://www.lmwlove.com/About/WebMap.aspx" target="_blank" rel="nofollow">网站地图</A> 
+| <A href="http://www.lmwlove.com/About/Diary.aspx" target="_blank" rel="nofollow">网站日志</A> 
+| <A href="http://www.lmwlove.com/About/AboutUs.aspx" target="_blank" rel="nofollow">关于我们</A> 
+| <A href="http://www.lmwlove.com/About/jhyl.aspx" target="_blank" rel="nofollow">交换链接</A> 
+| <A href="http://www.lmwlove.com/About/Contact.aspx" target="_blank" rel="nofollow">联系我们</A> 
+                | <A href="http://www.lmwlove.com/About/Statement.aspx" target="_blank" 
+rel="nofollow">网站声明</A> | <A href="javascript:window.external.AddFavorite('http://www.lmwlove.com', '.net学习网-专注于.net程序开发')" 
+rel="nofollow">收藏本站</A>             </P>
+<P>Copyright © http://www.lmwlove.com. All Rights Reserved 粤ICP备11045551号        
+     </P></DIV>
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var Page_Validators =  new Array(document.getElementById("ctl00_Content_Comment1_RequiredFieldValidator1"), document.getElementById("ctl00_Content_Comment1_RequiredFieldValidator2"));
+//]]>
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+//<![CDATA[
+var ctl00_Content_Comment1_RequiredFieldValidator1 = document.all ? document.all["ctl00_Content_Comment1_RequiredFieldValidator1"] : document.getElementById("ctl00_Content_Comment1_RequiredFieldValidator1");
+ctl00_Content_Comment1_RequiredFieldValidator1.controltovalidate = "ctl00_Content_Comment1_Content";
+ctl00_Content_Comment1_RequiredFieldValidator1.errormessage = "*";
+ctl00_Content_Comment1_RequiredFieldValidator1.display = "Dynamic";
+ctl00_Content_Comment1_RequiredFieldValidator1.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_Content_Comment1_RequiredFieldValidator1.initialvalue = "";
+var ctl00_Content_Comment1_RequiredFieldValidator2 = document.all ? document.all["ctl00_Content_Comment1_RequiredFieldValidator2"] : document.getElementById("ctl00_Content_Comment1_RequiredFieldValidator2");
+ctl00_Content_Comment1_RequiredFieldValidator2.controltovalidate = "ctl00_Content_Comment1_txt_answer";
+ctl00_Content_Comment1_RequiredFieldValidator2.errormessage = "*";
+ctl00_Content_Comment1_RequiredFieldValidator2.display = "Dynamic";
+ctl00_Content_Comment1_RequiredFieldValidator2.evaluationfunction = "RequiredFieldValidatorEvaluateIsValid";
+ctl00_Content_Comment1_RequiredFieldValidator2.initialvalue = "";
+//]]>
+</SCRIPT>
+ 
+<SCRIPT type="text/javascript">
+//<![CDATA[
+
+var Page_ValidationActive = false;
+if (typeof(ValidatorOnLoad) == "function") {
+    ValidatorOnLoad();
+}
+
+function ValidatorOnSubmit() {
+    if (Page_ValidationActive) {
+        return ValidatorCommonOnSubmit();
+    }
+    else {
+        return true;
+    }
+}
+        //]]>
+</SCRIPT>
+ </FORM>
+<SCRIPT type="text/javascript">
+        function search() {
+            var keyvalue = document.getElementById("keytext").value;
+            if (keyvalue == "" || keyvalue == "输入关键字") {
+                alert("请输入关键字")
+            }
+            else {
+                window.location.href = "/Article/ArticleSearchList.aspx?keys=" + escape(keyvalue);
+            }
+        }
+        function clearkey() {
+            var keyvalue = document.getElementById("keytext").value;
+            if (keyvalue == "输入关键字") {
+                document.getElementById("keytext").value = '';
+            }
+        }
+        function setdefault() {
+            var keyvalue = document.getElementById("keytext").value;
+            if (keyvalue == '') {
+                document.getElementById("keytext").value = "输入关键字";
+            }
+        }
+
+        document.body.oncopy = function () {
+            setTimeout(function () {
+                var text = clipboardData.getData("text");
+                if (text) {
+                    text = text + "\r\n\r\n本文来自：.Net学习网 " + this.location.href;
+                    clipboardData.setData("text", text);
+                }
+            }, 100)
+        }
+    </SCRIPT>
+     <!-- Baidu Button BEGIN -->     
+<SCRIPT id="bdshare_js" type="text/javascript" data="type=tools&amp;uid=588348"></SCRIPT>
+     
+<SCRIPT id="bdshell_js" type="text/javascript"></SCRIPT>
+     
+<SCRIPT type="text/javascript">
+        document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+    </SCRIPT>
+     
+<SCRIPT src="利用SQL命令分析SQL语句的性能及执行时间--_net学习网_files/jQuery.js" type="text/javascript"></SCRIPT>
+     <!-- Baidu Button END --> </BODY></HTML>

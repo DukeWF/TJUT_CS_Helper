@@ -1,0 +1,9 @@
+E:\2017.net\WF\Project\try-catch-finally\try-catch-finally\bin\Debug\try-catch-finally.exe
+E:\2017.net\WF\Project\try-catch-finally\try-catch-finally\bin\Debug\try-catch-finally.pdb
+E:\2017.net\WF\Project\try-catch-finally\try-catch-finally\obj\x86\Debug\try-catch-finally.exe
+E:\2017.net\WF\Project\try-catch-finally\try-catch-finally\obj\x86\Debug\try-catch-finally.pdb
+H:\Files\2017.net\Project\try-catch-finally\try-catch-finally\bin\Debug\try-catch-finally.exe
+H:\Files\2017.net\Project\try-catch-finally\try-catch-finally\bin\Debug\try-catch-finally.pdb
+H:\Files\2017.net\Project\try-catch-finally\try-catch-finally\obj\x86\Debug\try-catch-finally.csprojResolveAssemblyReference.cache
+H:\Files\2017.net\Project\try-catch-finally\try-catch-finally\obj\x86\Debug\try-catch-finally.exe
+H:\Files\2017.net\Project\try-catch-finally\try-catch-finally\obj\x86\Debug\try-catch-finally.pdb

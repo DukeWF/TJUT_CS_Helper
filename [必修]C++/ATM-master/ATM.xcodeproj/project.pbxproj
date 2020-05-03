@@ -1,0 +1,305 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		627E500E1A21CBF0002BD870 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E500D1A21CBF0002BD870 /* main.cpp */; };
+		627E50161A21CC0E002BD870 /* Screen.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50141A21CC0E002BD870 /* Screen.cpp */; };
+		627E50191A21CE18002BD870 /* Keypad.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50171A21CE18002BD870 /* Keypad.cpp */; };
+		627E501C1A21CF99002BD870 /* CashDispenser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E501A1A21CF99002BD870 /* CashDispenser.cpp */; };
+		627E501F1A21D2D1002BD870 /* DepositSlot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E501D1A21D2D1002BD870 /* DepositSlot.cpp */; };
+		627E50221A21D463002BD870 /* Account.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50201A21D463002BD870 /* Account.cpp */; };
+		627E50251A21DA6D002BD870 /* BankDatabase.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50231A21DA6D002BD870 /* BankDatabase.cpp */; };
+		627E50281A21E939002BD870 /* Transaction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50261A21E939002BD870 /* Transaction.cpp */; };
+		627E50311A21ECB8002BD870 /* BalanceInquiry.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E502F1A21ECB8002BD870 /* BalanceInquiry.cpp */; };
+		627E50341A21F043002BD870 /* ATM.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50321A21F043002BD870 /* ATM.cpp */; };
+		627E50371A220ED3002BD870 /* Withdrawal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50351A220ED3002BD870 /* Withdrawal.cpp */; };
+		627E503A1A222C20002BD870 /* Deposit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 627E50381A222C20002BD870 /* Deposit.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		627E50081A21CBF0002BD870 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		627E500A1A21CBF0002BD870 /* ATM */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ATM; sourceTree = BUILT_PRODUCTS_DIR; };
+		627E500D1A21CBF0002BD870 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		627E50141A21CC0E002BD870 /* Screen.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Screen.cpp; sourceTree = "<group>"; };
+		627E50151A21CC0E002BD870 /* Screen.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Screen.h; sourceTree = "<group>"; };
+		627E50171A21CE18002BD870 /* Keypad.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Keypad.cpp; sourceTree = "<group>"; };
+		627E50181A21CE18002BD870 /* Keypad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Keypad.h; sourceTree = "<group>"; };
+		627E501A1A21CF99002BD870 /* CashDispenser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CashDispenser.cpp; sourceTree = "<group>"; };
+		627E501B1A21CF99002BD870 /* CashDispenser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CashDispenser.h; sourceTree = "<group>"; };
+		627E501D1A21D2D1002BD870 /* DepositSlot.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = DepositSlot.cpp; sourceTree = "<group>"; };
+		627E501E1A21D2D1002BD870 /* DepositSlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DepositSlot.h; sourceTree = "<group>"; };
+		627E50201A21D463002BD870 /* Account.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Account.cpp; sourceTree = "<group>"; };
+		627E50211A21D463002BD870 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
+		627E50231A21DA6D002BD870 /* BankDatabase.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BankDatabase.cpp; sourceTree = "<group>"; };
+		627E50241A21DA6D002BD870 /* BankDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BankDatabase.h; sourceTree = "<group>"; };
+		627E50261A21E939002BD870 /* Transaction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Transaction.cpp; sourceTree = "<group>"; };
+		627E50271A21E939002BD870 /* Transaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Transaction.h; sourceTree = "<group>"; };
+		627E502F1A21ECB8002BD870 /* BalanceInquiry.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BalanceInquiry.cpp; sourceTree = "<group>"; };
+		627E50301A21ECB8002BD870 /* BalanceInquiry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BalanceInquiry.h; sourceTree = "<group>"; };
+		627E50321A21F043002BD870 /* ATM.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ATM.cpp; sourceTree = "<group>"; };
+		627E50331A21F043002BD870 /* ATM.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ATM.h; sourceTree = "<group>"; };
+		627E50351A220ED3002BD870 /* Withdrawal.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Withdrawal.cpp; sourceTree = "<group>"; };
+		627E50361A220ED3002BD870 /* Withdrawal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Withdrawal.h; sourceTree = "<group>"; };
+		627E50381A222C20002BD870 /* Deposit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Deposit.cpp; sourceTree = "<group>"; };
+		627E50391A222C20002BD870 /* Deposit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deposit.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		627E50071A21CBF0002BD870 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		627E50011A21CBF0002BD870 = {
+			isa = PBXGroup;
+			children = (
+				627E500C1A21CBF0002BD870 /* ATM */,
+				627E500B1A21CBF0002BD870 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		627E500B1A21CBF0002BD870 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				627E500A1A21CBF0002BD870 /* ATM */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		627E500C1A21CBF0002BD870 /* ATM */ = {
+			isa = PBXGroup;
+			children = (
+				627E500D1A21CBF0002BD870 /* main.cpp */,
+				627E50141A21CC0E002BD870 /* Screen.cpp */,
+				627E50151A21CC0E002BD870 /* Screen.h */,
+				627E50171A21CE18002BD870 /* Keypad.cpp */,
+				627E50181A21CE18002BD870 /* Keypad.h */,
+				627E501A1A21CF99002BD870 /* CashDispenser.cpp */,
+				627E501B1A21CF99002BD870 /* CashDispenser.h */,
+				627E501D1A21D2D1002BD870 /* DepositSlot.cpp */,
+				627E501E1A21D2D1002BD870 /* DepositSlot.h */,
+				627E50201A21D463002BD870 /* Account.cpp */,
+				627E50211A21D463002BD870 /* Account.h */,
+				627E50231A21DA6D002BD870 /* BankDatabase.cpp */,
+				627E50241A21DA6D002BD870 /* BankDatabase.h */,
+				627E50261A21E939002BD870 /* Transaction.cpp */,
+				627E50271A21E939002BD870 /* Transaction.h */,
+				627E502F1A21ECB8002BD870 /* BalanceInquiry.cpp */,
+				627E50301A21ECB8002BD870 /* BalanceInquiry.h */,
+				627E50321A21F043002BD870 /* ATM.cpp */,
+				627E50331A21F043002BD870 /* ATM.h */,
+				627E50351A220ED3002BD870 /* Withdrawal.cpp */,
+				627E50361A220ED3002BD870 /* Withdrawal.h */,
+				627E50381A222C20002BD870 /* Deposit.cpp */,
+				627E50391A222C20002BD870 /* Deposit.h */,
+			);
+			path = ATM;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		627E50091A21CBF0002BD870 /* ATM */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 627E50111A21CBF0002BD870 /* Build configuration list for PBXNativeTarget "ATM" */;
+			buildPhases = (
+				627E50061A21CBF0002BD870 /* Sources */,
+				627E50071A21CBF0002BD870 /* Frameworks */,
+				627E50081A21CBF0002BD870 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ATM;
+			productName = ATM;
+			productReference = 627E500A1A21CBF0002BD870 /* ATM */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		627E50021A21CBF0002BD870 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Xeasony;
+				TargetAttributes = {
+					627E50091A21CBF0002BD870 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+				};
+			};
+			buildConfigurationList = 627E50051A21CBF0002BD870 /* Build configuration list for PBXProject "ATM" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 627E50011A21CBF0002BD870;
+			productRefGroup = 627E500B1A21CBF0002BD870 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				627E50091A21CBF0002BD870 /* ATM */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		627E50061A21CBF0002BD870 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				627E50341A21F043002BD870 /* ATM.cpp in Sources */,
+				627E50251A21DA6D002BD870 /* BankDatabase.cpp in Sources */,
+				627E500E1A21CBF0002BD870 /* main.cpp in Sources */,
+				627E50221A21D463002BD870 /* Account.cpp in Sources */,
+				627E501F1A21D2D1002BD870 /* DepositSlot.cpp in Sources */,
+				627E50311A21ECB8002BD870 /* BalanceInquiry.cpp in Sources */,
+				627E50371A220ED3002BD870 /* Withdrawal.cpp in Sources */,
+				627E50161A21CC0E002BD870 /* Screen.cpp in Sources */,
+				627E503A1A222C20002BD870 /* Deposit.cpp in Sources */,
+				627E501C1A21CF99002BD870 /* CashDispenser.cpp in Sources */,
+				627E50281A21E939002BD870 /* Transaction.cpp in Sources */,
+				627E50191A21CE18002BD870 /* Keypad.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		627E500F1A21CBF0002BD870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		627E50101A21CBF0002BD870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		627E50121A21CBF0002BD870 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		627E50131A21CBF0002BD870 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		627E50051A21CBF0002BD870 /* Build configuration list for PBXProject "ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627E500F1A21CBF0002BD870 /* Debug */,
+				627E50101A21CBF0002BD870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		627E50111A21CBF0002BD870 /* Build configuration list for PBXNativeTarget "ATM" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				627E50121A21CBF0002BD870 /* Debug */,
+				627E50131A21CBF0002BD870 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 627E50021A21CBF0002BD870 /* Project object */;
+}

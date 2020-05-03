@@ -1,0 +1,31 @@
+# Project: PassObjectByValue
+# Makefile created by Dev-C++ 5.6.0
+
+CPP      = g++.exe -D__DEBUG__
+CC       = gcc.exe -D__DEBUG__
+WINDRES  = windres.exe
+OBJ      = Circle2.o PassObjectByValue.o
+LINKOBJ  = Circle2.o PassObjectByValue.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/lib" -static-libstdc++ -static-libgcc -g3
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW32/lib/gcc/mingw32/4.8.1/include/c++"
+BIN      = PassObjectByValue.exe
+CXXFLAGS = $(CXXINCS) -Og -std=c++98 -g3 -fverbose-asm
+CFLAGS   = $(INCS) -Og -std=c++98 -g3 -fverbose-asm
+RM       = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+Circle2.o: Circle2.cpp
+	$(CPP) -c Circle2.cpp -o Circle2.o $(CXXFLAGS)
+
+PassObjectByValue.o: PassObjectByValue.cpp
+	$(CPP) -c PassObjectByValue.cpp -o PassObjectByValue.o $(CXXFLAGS)

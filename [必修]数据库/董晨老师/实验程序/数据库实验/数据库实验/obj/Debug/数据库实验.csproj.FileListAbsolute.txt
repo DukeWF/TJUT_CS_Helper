@@ -1,0 +1,9 @@
+F:\数据库\实验程序\数据库实验\数据库实验\bin\Debug\数据库实验.exe.config
+F:\数据库\实验程序\数据库实验\数据库实验\bin\Debug\数据库实验.exe
+F:\数据库\实验程序\数据库实验\数据库实验\bin\Debug\数据库实验.pdb
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.csprojResolveAssemblyReference.cache
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.Form1.resources
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.Properties.Resources.resources
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.csproj.GenerateResource.Cache
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.exe
+F:\数据库\实验程序\数据库实验\数据库实验\obj\Debug\数据库实验.pdb

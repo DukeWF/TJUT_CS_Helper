@@ -1,0 +1,12 @@
+<Context>
+<Resource name="jdbc/DBPool" auth="Container"
+    type="javax.sql.DataSource"
+	factory="org.apache.commons.dbcp2.BasicDataSourceFactory"
+	username="sa"
+	password="ywj020318"        
+	driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"  
+	url="jdbc:sqlserver://localhost:1433;DatabaseName=SSMS"          
+	maxTotal="100"
+	maxIdle="1000"
+	maxWaitMillis="5000" /> 
+</Context>

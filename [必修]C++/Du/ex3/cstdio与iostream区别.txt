@@ -1,0 +1,14 @@
+1.cstdio是面向“文件”的，或者不强调文件和非文件流的区别，默认流就是可以关联外部文件，至于文件的外延是啥就不管，扔给宿主环境了。从std::FILE这个名字以及printf/scanf接口描述基于fprintf/fscanf上就可以看出来。
+iostream头只是包含了一坨东西，封装标准输入输出流，和文件流（在<fstream>）不通用。
+2.cstdio不知道iostream，而iostream知道cstdio并且默认同步，此外提供有限的接口摆脱关系（sync_with_stdio）。因为这个接口约束，iostream要脱离cstdio（的实现）是不太可能的。
+3.cstdio有orientation的概念；iostream是否wide是直接写死在静态类型的模板参数里的，并且底层的流不只支持char和wchar_t字符类型。
+4.iostream底层公开了相对完整的缓冲接口（如std::basic_filebuf），可以自行扩展；cstdio只能笼统地设置缓冲模式和提供提供区的接口，但多了行缓冲的概念（_IOLBF）。
+5.iostream和std::locale交互。C标准库的<locale.h>（对应C++的<clocale>）提供locale-specific behavior，和cstdio不直接关联。两者不是一回事。
+因为这个原因，iostream能直接编解码字符串，而cstdio不能处理和wide-oriented无关的编码，需要<wchar.h>（对应C++的<cwchar>）或C11的<uchar.h>的例程显式调用。
+6.iostream体系提供了基于字符串提供了“内存流”（主要是std::stringstream），而cstdio这部分一般只是内部实现，如果需要得自己造。
+7.iostream底层通过继承和重写protected虚函数提供实现。cstdio这部分是内部实现，不提供与之对应的扩展功能。
+8.两者都实现了流的状态，但不尽相同。iostream显式区分bad和fail，但cstdio没有。
+9.iostream提供特定的打开模式的组合，而cstdio使用字符串参数。前者无法直接扩展；后者解析较低效，虽然不需要修改类型就可扩展但也存在实现的运行时兼容性问题。
+10.除了检查流的状态，iostream处理错误可选使用异常。cstdio处理错误依赖返回值和流状态。
+11.iostream的格式输入输出基于重载，静态分派且类型安全，可以实现得更高效；cstdio的格式输入输出使用的是领域特定语言，需要运行时解析，通常比较低效，且实现的运行时兼容问题修复较困难。
+但后者同时提供运行时配置可修改的格式的功能，而前者没有。

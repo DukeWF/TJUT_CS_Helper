@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "求和", "EXP2\求和.csproj", "{F01D0A8A-528A-47AC-AD7D-746B69D9A17B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9D78DCA0-F290-4E01-91F2-05F42AB12D71} = {9D78DCA0-F290-4E01-91F2-05F42AB12D71}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "成绩判定", "成绩判定\成绩判定.csproj", "{9D78DCA0-F290-4E01-91F2-05F42AB12D71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F01D0A8A-528A-47AC-AD7D-746B69D9A17B}.Debug|x86.ActiveCfg = Debug|x86
+		{F01D0A8A-528A-47AC-AD7D-746B69D9A17B}.Debug|x86.Build.0 = Debug|x86
+		{F01D0A8A-528A-47AC-AD7D-746B69D9A17B}.Release|x86.ActiveCfg = Release|x86
+		{F01D0A8A-528A-47AC-AD7D-746B69D9A17B}.Release|x86.Build.0 = Release|x86
+		{9D78DCA0-F290-4E01-91F2-05F42AB12D71}.Debug|x86.ActiveCfg = Debug|x86
+		{9D78DCA0-F290-4E01-91F2-05F42AB12D71}.Debug|x86.Build.0 = Debug|x86
+		{9D78DCA0-F290-4E01-91F2-05F42AB12D71}.Release|x86.ActiveCfg = Release|x86
+		{9D78DCA0-F290-4E01-91F2-05F42AB12D71}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

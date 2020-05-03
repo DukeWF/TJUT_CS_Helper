@@ -1,0 +1,4 @@
+E:\2017.net\WF\Project\EXP2\成绩判定\bin\Debug\成绩判定.exe
+E:\2017.net\WF\Project\EXP2\成绩判定\bin\Debug\成绩判定.pdb
+E:\2017.net\WF\Project\EXP2\成绩判定\obj\x86\Debug\成绩判定.exe
+E:\2017.net\WF\Project\EXP2\成绩判定\obj\x86\Debug\成绩判定.pdb

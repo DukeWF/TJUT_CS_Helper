@@ -1,0 +1,4 @@
+E:\2017.net\WF\Project\EXP1\EXP1\bin\Debug\EXP1.exe
+E:\2017.net\WF\Project\EXP1\EXP1\bin\Debug\EXP1.pdb
+E:\2017.net\WF\Project\EXP1\EXP1\obj\x86\Debug\EXP1.exe
+E:\2017.net\WF\Project\EXP1\EXP1\obj\x86\Debug\EXP1.pdb

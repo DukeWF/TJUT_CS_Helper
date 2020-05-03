@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Debug/DSplit.res" /d "_DEBUG" /d "_AFXDLL" "E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DSplit.rc"" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP1E.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/DSplit.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\Cdib.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DlgPingYi.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DlgSuoFang.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DlgXuanZhuan.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DSplit.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DSplitDoc.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DSplitView.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DynSplitterWnd.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DynSplitView2.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp"
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP1E.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP1F.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Debug/DSplit.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /c 
+"E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP1F.tmp" 
+Creating temporary file "C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP20.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/DSplit.pdb" /debug /machine:I386 /out:"Debug/DSplit.exe" /pdbtype:sept 
+".\Debug\Cdib.obj"
+".\Debug\DlgPingYi.obj"
+".\Debug\DlgSuoFang.obj"
+".\Debug\DlgXuanZhuan.obj"
+".\Debug\DSplit.obj"
+".\Debug\DSplitDoc.obj"
+".\Debug\DSplitView.obj"
+".\Debug\DynSplitterWnd.obj"
+".\Debug\DynSplitView2.obj"
+".\Debug\JiHeBianHuanDib.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\DELL\LOCALS~1\Temp\RSP20.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Cdib.cpp
+DlgPingYi.cpp
+DlgSuoFang.cpp
+DlgXuanZhuan.cpp
+DSplit.cpp
+DSplitDoc.cpp
+DSplitView.cpp
+DynSplitterWnd.cpp
+DynSplitView2.cpp
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\DynSplitView2.cpp(362) : warning C4244: 'initializing' : conversion from 'float' to 'long', possible loss of data
+JiHeBianHuanDib.cpp
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(260) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(262) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(267) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(267) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(287) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(289) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(294) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(294) : warning C4018: '<' : signed/unsigned mismatch
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(211) : warning C4101: 'OffBits' : unreferenced local variable
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(220) : warning C4101: 'LineBytes' : unreferenced local variable
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(211) : warning C4101: 'DstLineBytes' : unreferenced local variable
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(211) : warning C4101: 'SrcBufSize' : unreferenced local variable
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(365) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+E:\各种资料\VC++图像处理程序设计配套光盘\第三章几何变换\JiHeBianHuanDib.cpp(366) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+MainFrm.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 15 warning(s)
+</pre>
+</body>
+</html>

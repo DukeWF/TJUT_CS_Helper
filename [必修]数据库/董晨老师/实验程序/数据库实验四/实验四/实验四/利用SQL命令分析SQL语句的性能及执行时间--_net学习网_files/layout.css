@@ -1,0 +1,381 @@
+#location {
+	margin: 10px auto 0px; width: 960px;
+}
+#location h3 {
+	background: url("../images/icon_house.png") no-repeat 2px 6px; text-indent: 25px; font-size: 13px; font-weight: normal;
+}
+#contain {
+	margin: 0px auto; width: 960px;
+}
+.side {
+	width: 290px; overflow: hidden;
+}
+.download {
+	border: 1px solid rgb(217, 228, 234); border-image: none; width: 288px;
+}
+.download_title {
+	background: url("../images/load_bj.png") repeat-x; width: 288px; height: 28px;
+}
+.download_title h3 {
+	background: url("../images/load.png") no-repeat; width: 81px; height: 35px; text-align: center; color: rgb(255, 255, 255); line-height: 28px;
+}
+.download_title i {
+	background: url("../images/icon_skill.png") no-repeat 1px 7px; height: 28px; line-height: 28px; text-indent: 16px; font-size: 14px; font-weight: bold; margin-left: 8px;
+}
+ul.download_list {
+	margin: 8px 10px 10px;
+}
+ul.download_list li {
+	background: url("../images/icon_1.png") no-repeat 1px 11px; width: 258px; color: rgb(31, 31, 31); text-indent: 15px; overflow: hidden; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.download h3 {
+	background: url("../images/load.png") no-repeat; width: 81px; height: 35px; text-align: center; color: rgb(255, 255, 255); line-height: 28px;
+}
+.download i {
+	background: url("../images/icon_skill.png") no-repeat 1px 7px; height: 28px; color: rgb(31, 31, 31); line-height: 28px; text-indent: 16px; font-size: 14px; font-weight: bold; margin-left: 8px;
+}
+.more {
+	height: 31px; line-height: 31px; padding-right: 8px;
+}
+.more a {
+	text-decoration: none;
+}
+.more a:hover {
+	color: rgb(99, 98, 98); text-decoration: underline;
+}
+.end_list10 {
+	background: url("../images/rdph_li_bg.png") no-repeat left -4px; margin: 10px; overflow: hidden;
+}
+.end_list10 li {
+	background: 0px 0px; height: 25px; line-height: 25px; padding-left: 20px; white-space: normal;
+}
+.end_list li {
+	background-position: -346px 10px; width: 248px; overflow: hidden; padding-left: 25px; margin-right: 10px; float: left; display: inline; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+.fix::after {
+	height: 0px; clear: both; display: block; visibility: hidden; content: "";
+}
+.ad5 {
+	padding: 10px 0px;
+}
+.mt10 {
+	margin-top: 10px;
+}
+.main {
+	width: 660px; overflow: hidden;
+}
+.main_div1 {
+	background: rgb(245, 248, 253); border-width: 2px 1px 1px; border-style: solid; border-color: rgb(3, 105, 217) rgb(217, 228, 234) rgb(217, 228, 234); width: 658px;
+}
+.main_div1 h4 {
+	background: url("../images/main_title_bj.png") repeat-x; width: 726px;
+}
+.main_div1 i {
+	color: rgb(31, 31, 31); font-size: 14px; font-weight: bold; margin-left: 8px;
+}
+.main_div1 h2 {
+	padding: 15px 0px 10px; width: 660px; text-align: center; color: rgb(0, 0, 0); font-size: 24px; font-weight: bold;
+}
+.come_share {
+	padding: 0px 30px 6px; color: rgb(50, 50, 50); line-height: 18px; font-size: 12px; border-bottom-color: rgb(218, 221, 225); border-bottom-width: 1px; border-bottom-style: dotted; position: relative;
+}
+.detail_other_2 {
+	background: rgb(255, 255, 255); margin: 25px 0px 10px; padding: 8px; border: 1px dashed rgb(115, 160, 207); border-image: none; text-align: left; line-height: 26px;
+}
+#bdshare {
+	text-align: left !important; padding-bottom: 2px; font-size: 12px; margin-top: 2px; z-index: 999999;
+}
+span.bds_more {
+	height: 16px; padding-top: 6px; padding-bottom: 3px; padding-left: 22px; font-family: "????",Arial; float: left; display: block; cursor: pointer;
+}
+.bds_tools a {
+	height: 16px; padding-top: 6px; padding-bottom: 3px; padding-left: 22px; font-family: "????",Arial; float: left; display: block; cursor: pointer;
+}
+span.bds_more {
+	background: url("../images/is.png") no-repeat 0px 5px !important;
+}
+#bdshare a {
+	text-decoration: none; cursor: pointer;
+}
+#bdshare_s a {
+	text-decoration: none; cursor: pointer;
+}
+#bdshare_pop a {
+	text-decoration: none; cursor: pointer;
+}
+.bds_tools a {
+	background: url("../images/is.png") no-repeat 0px 0px;
+}
+.bds_qzone {
+	background-position: 0px -75px !important;
+}
+.bds_tsina {
+	background-position: 0px -115px !important;
+}
+.bds_tqq {
+	background-position: 0px -235px !important;
+}
+.bds_renren {
+	background-position: 0px -195px !important;
+}
+.bdshare_b a.shareCount {
+	background: url("../images/sc.png?cdnversion=20120720") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); float: left;
+}
+.bds_tools a.shareCount {
+	background: url("../images/sc.png?cdnversion=20120720") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); float: left;
+}
+.bds_tools_32 a.shareCount {
+	background: url("../images/sc.png?cdnversion=20120720") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); float: left;
+}
+.bds_tools a.shareCount {
+	background-position: 0px -30px !important; width: 37px; height: 16px; line-height: 16px; overflow: hidden; font-size: 12px; margin-top: 5px;
+}
+.bdshare_b a.shareCount {
+	background: url("../images/sc.png") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); font-family: "????" !important; float: left;
+}
+.bds_tools a.shareCount {
+	background: url("../images/sc.png") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); font-family: "????" !important; float: left;
+}
+.bds_tools_32 a.shareCount {
+	background: url("../images/sc.png") no-repeat 0px 0px !important; margin: 0px; padding: 0px 0px 0px 5px; text-align: center; color: rgb(69, 69, 69); font-family: "????" !important; float: left;
+}
+.bds_tools a {
+	background: url("../images/is.png") no-repeat 0px 0px;
+}
+span.bds_more {
+	background: url("../images/is.png") no-repeat 0px 5px !important;
+}
+.bds_more {
+	background-position: 0px 4px !important; background-image: url("../images/is.png") !important;
+}
+.brieftext {
+	background: 0px 0px rgb(255, 255, 255); margin: 15px 30px; padding: 8px 12px; border: 1px dashed rgb(115, 160, 207); border-image: none; line-height: 26px;
+}
+.green {
+	color: rgb(0, 102, 0);
+}
+.f14 {
+	font-size: 14px;
+}
+.ti2 {
+	text-indent: 2em;
+}
+.title {
+	background: rgb(255, 255, 255); margin: 5px 30px; padding: 5px; height: 30px;
+}
+.title h4 {
+	background: url("../images/icon_2.png") no-repeat 1px 7px; color: rgb(13, 59, 94); line-height: 30px; text-indent: 30px; font-family: "Microsoft YaHei"; font-size: 18px; font-weight: bold;
+}
+ul.main_subject {
+	margin: 5px 30px;
+}
+ul.main_subject li {
+	width: 290px; color: rgb(34, 86, 126); line-height: 26px; overflow: hidden; font-size: 14px; float: left; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+ul.main_subject li a {
+	color: rgb(34, 86, 126); text-decoration: none;
+}
+ul.main_subject li a:hover {
+	text-decoration: underline;
+}
+.point {
+	color: gray; padding-right: 1px;
+}
+ul.navgation {
+	padding: 8px 6px; border: 2px solid rgb(67, 156, 255); border-image: none; width: 274px;
+}
+ul.navgation li {
+	background: url("../images/icon_3.png") no-repeat 1px 10px; text-indent: 13px; font-size: 13px;
+}
+ul.navgation li a {
+	color: rgb(16, 92, 182); text-decoration: none;
+}
+ul.navgation li a:hover {
+	color: rgb(244, 4, 15); text-decoration: underline;
+}
+.bd999 {
+	border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+dl.main_div2 {
+	margin: 15px; padding-bottom: 8px; border-bottom-color: rgb(153, 153, 153); border-bottom-width: 1px; border-bottom-style: dashed;
+}
+dl.main_div2 dt {
+	background: url("../images/icon_4.png") no-repeat 1px 7px; width: 630px; color: rgb(16, 92, 182); text-indent: 18px; overflow: hidden; font-size: 16px; font-weight: bold; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+dl.main_div2 dt a {
+	color: rgb(16, 92, 182);
+}
+dl.main_div2 dt a:hover {
+	color: rgb(244, 4, 15);
+}
+dl.main_div2 dd {
+	
+}
+.font2 {
+	margin: 4px 4px 4px 2px; padding: 0px 8px; color: gray;
+}
+.font1 {
+	margin: 4px; padding: 0px 8px; width: 270px; color: gray;
+}
+.pages {
+	margin: 20px auto; padding: 14px 0px 10px; text-align: center;
+}
+.pages a.a1 {
+	background: url("../../images/pages.png") no-repeat 0px 5px rgb(255, 255, 255); padding: 0px; width: 56px;
+}
+.pages a {
+	background: 0px 0px rgb(255, 255, 255); margin: 2px; padding: 0px 10px; border: 1px solid rgb(216, 216, 216); border-image: none; height: 22px; text-align: center; color: rgb(51, 51, 51); line-height: 22px; display: inline-block;
+}
+.pages span {
+	background: 0px 0px rgb(90, 133, 178); padding: 0px 10px; border: 1px solid rgb(90, 133, 178); border-image: none; height: 22px; text-align: center; color: rgb(255, 255, 255); line-height: 22px; display: inline-block;
+}
+.down_mes {
+	margin: 0px auto; width: 600px;
+}
+.share {
+	margin: 0px auto; width: 200px; height: 30px;
+}
+.downnav {
+	background: 0px 0px rgb(255, 255, 255); margin: 12px 15px; padding: 2px 0px 2px 8px; border: 1px solid rgb(145, 195, 228); border-image: none; color: rgb(4, 121, 198); font-size: 14px; font-weight: bold;
+}
+.content {
+	margin: 5px 15px; color: rgb(0, 0, 0); line-height: 27px; font-size: 15px;
+}
+.content i {
+	color: rgb(102, 102, 102); font-size: 13px; font-style: italic; font-weight: 100;
+}
+.content p {
+	font-size: 14px;
+}
+.detail_other {
+	color: rgb(126, 126, 126); padding-top: 8px;
+}
+.pageup {
+	width: 698px; padding-top: 8px; margin-top: 10px; border-top-color: rgb(206, 206, 206); border-top-width: 1px; border-top-style: dashed;
+}
+.pageup p {
+	color: rgb(90, 91, 92); font-size: 13px;
+}
+.pageup p a {
+	color: rgb(90, 91, 92); font-size: 13px;
+}
+.pageup p a:hover {
+	color: rgb(244, 4, 15); font-size: 13px;
+}
+.p15 {
+	padding: 15px 0px;
+}
+.pb15 {
+	padding-bottom: 10px;
+}
+.main_div3 {
+	background: rgb(245, 248, 253); border: 1px solid rgb(217, 228, 234); border-image: none; width: 658px;
+}
+.main_div3_title {
+	background: url("../images/load_bj.png") repeat-x; width: 658px; height: 28px;
+}
+.main_div3_title h3 {
+	background: url("../images/main_div3_title.png") no-repeat; width: 105px; height: 28px; text-align: center; color: rgb(255, 255, 255); line-height: 28px;
+}
+.main_div3_list {
+	padding: 12px 10px 8px;
+}
+ul.main_div3_list_l {
+	width: 640px;
+}
+ul.main_div3_list_l li {
+	background: url("../images/icon_3.png") no-repeat 1px 8px; width: 600px; line-height: 23px; text-indent: 13px; overflow: hidden; font-size: 13px; float: left; white-space: nowrap; -ms-text-overflow: ellipsis;
+}
+ul.main_div3_list_l li a {
+	color: rgb(0, 0, 238); text-decoration: none;
+}
+ul.main_div3_list_l li a:hover {
+	color: rgb(255, 0, 0); text-decoration: underline;
+}
+.tc {
+	text-align: center;
+}
+.tl {
+	text-align: left;
+}
+.contain {
+	margin: 0px auto; border: 3px solid rgb(51, 148, 255); width: 954px;
+}
+.con3 {
+	padding: 5px 10px;
+}
+.sw_introduction {
+	padding: 0px 10px;
+}
+.sw_introduction h2 {
+	background: url("../images/sw_introduction.png") no-repeat; margin: 0px auto; width: 226px; height: 35px; text-align: center; color: rgb(255, 255, 255); font-size: 18px; font-weight: bold;
+}
+.sw_introduction h4 {
+	padding: 15px 0px 10px; text-align: center; font-size: 20px;
+}
+dl.sw_introduction_text {
+	
+}
+dl.sw_introduction_text dt {
+	width: 110px; float: left; position: relative;
+}
+dl.sw_introduction_text dt p {
+	text-align: left; margin-top: -30px; margin-bottom: 50px;
+}
+dl.sw_introduction_text dt .img1 {
+	margin-top: -30px; position: absolute; z-index: 30;
+}
+dl.sw_introduction_text dt a {
+	outline: 0px;
+}
+dl.sw_introduction_text dd {
+	width: 785px; margin-top: 8px; float: right;
+}
+dl.sw_introduction_text dd p {
+	padding: 6px 5px; color: rgb(35, 35, 35); line-height: 28px; text-indent: 2em; font-size: 16px;
+}
+dl.sw_introduction_text dd p span {
+	color: rgb(255, 0, 0);
+}
+.sw_manage {
+	width: 455px;
+}
+.sw_manage_title {
+	width: 445px;
+}
+.sw_manage h3 {
+	background: url("../images/sw_manage_title.png") no-repeat; width: 165px; height: 37px; color: rgb(255, 255, 255); line-height: 32px; text-indent: 10px; font-family: "????"; font-size: 18px; font-weight: bold;
+}
+dl.sw_description {
+	padding: 8px 0px 0px;
+}
+dl.sw_description dt {
+	width: 100%;
+}
+dl.sw_description dt img {
+	width: 449px; height: 292px;
+}
+dl.sw_description dd {
+	margin: 20px 0px 0px; width: 100%; text-align: justify; color: rgb(35, 35, 35); line-height: 24px; text-indent: 2em; font-size: 14px; -ms-word-break: break-all; -ms-text-justify: inter-ideograph;
+}
+.border_r {
+	border-right-color: rgb(229, 229, 229); border-right-width: 1px; border-right-style: dashed;
+}
+.line_xx {
+	background: url("../images/line_r2.png") repeat-x; margin: 10px; width: 930px; height: 13px;
+}
+.p_r10 {
+	padding-right: 10px;
+}
+.sw_contact {
+	padding: 10px 10px 0px;
+}
+.sw_contact_left {
+	width: 220px; float: left;
+}
+.sw_contact_center {
+	width: 660px; float: left;
+}
+.sw_contact_center p {
+	color: rgb(10, 10, 10); line-height: 28px; font-size: 14px;
+}

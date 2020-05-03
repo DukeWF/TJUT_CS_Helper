@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<it315:书架 xmlns:it315="http://www.it315.org/xmlbook/schema">
+	<it315:书>
+		<it315:书名>JavaScript网页开发</it315:书名>
+		<it315:作者>张孝祥</it315:作者>
+		<it315:售价>28.00元</it315:售价>
+	</it315:书>
+</it315:书架>

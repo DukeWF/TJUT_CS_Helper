@@ -1,0 +1,11 @@
+
+	public static Connection getConnection(){
+		try{
+			Context ctx = new InitialContext();
+			DataSource ds=(DataSource) ctx.lookup("java:comp/env/jdbc/DBPool");
+			conn=ds.getConnection();			
+		}catch(Exception ex){
+			ex.printStackTrace();
+		}
+		return conn;
+	}

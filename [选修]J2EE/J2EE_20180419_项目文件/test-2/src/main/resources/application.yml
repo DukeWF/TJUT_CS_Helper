@@ -1,0 +1,13 @@
+spring:
+  mvc:
+    view:
+      prefix: /abc
+      suffix: .jsp
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/test
+    username: root
+    password: XJjxR46t
+    driver-class-name: com.mysql.jdbc.Driver
+server:
+  error:
+    path: /abc/error.jsp

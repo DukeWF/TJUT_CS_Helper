@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE 文件[
+<!NOTATION mp SYSTEM "movPlayer.exe"> 
+<!NOTATION gif SYSTEM "Image/gif"> 
+<!ELEMENT 文件 ANY> 
+<!ATTLIST 电影 演示设备 NOTATION (mp|gif) #REQUIRED> 
+]> 
+<文件>
+     <电影 演示设备="mp"/>
+</文件>

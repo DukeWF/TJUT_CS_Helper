@@ -1,0 +1,4 @@
+F:\数据库\实验程序\数据库实验三\数据库实验三\obj\Debug\数据库实验三.csprojResolveAssemblyReference.cache
+F:\数据库\实验程序\数据库实验三\数据库实验三\obj\Debug\数据库实验三.Form1.resources
+F:\数据库\实验程序\数据库实验三\数据库实验三\obj\Debug\数据库实验三.Properties.Resources.resources
+F:\数据库\实验程序\数据库实验三\数据库实验三\obj\Debug\数据库实验三.csproj.GenerateResource.Cache

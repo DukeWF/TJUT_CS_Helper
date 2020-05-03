@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x409 /fo"Release/DSplit.res" /d "NDEBUG" /d "_AFXDLL" "D:\BOOK about\code\w\第八章形态学1\粗化细化\DSplit.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/DSplit.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\BianTiDib.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\Cdib.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\DSplit.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\DSplitDoc.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\DSplitView.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\DynSplitterWnd.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\DynSplitView2.cpp"
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP140.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /FR"Release/" /Fp"Release/DSplit.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\BOOK about\code\w\第八章形态学1\粗化细化\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP141.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP142.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/DSplit.pdb" /machine:I386 /out:"Release/DSplit.exe" 
+".\Release\BianTiDib.obj"
+".\Release\Cdib.obj"
+".\Release\DSplit.obj"
+".\Release\DSplitDoc.obj"
+".\Release\DSplitView.obj"
+".\Release\DynSplitterWnd.obj"
+".\Release\DynSplitView2.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP142.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+BianTiDib.cpp
+Cdib.cpp
+DSplit.cpp
+DSplitDoc.cpp
+DSplitView.cpp
+DynSplitterWnd.cpp
+DynSplitView2.cpp
+MainFrm.cpp
+Generating Code...
+Linking...
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP144.tmp" with contents
+[
+/nologo /o"Release/DSplit.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\BianTiDib.sbr"
+".\Release\Cdib.sbr"
+".\Release\DSplit.sbr"
+".\Release\DSplitDoc.sbr"
+".\Release\DSplitView.sbr"
+".\Release\DynSplitterWnd.sbr"
+".\Release\DynSplitView2.sbr"
+".\Release\MainFrm.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP144.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

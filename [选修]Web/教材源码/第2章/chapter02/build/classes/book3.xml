@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<书架 xmlns="http://www.it315.org/xmlbook/schema" 
+      xmlns:demo="http://www.it315.org/demo/schema"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+     xsi:schemaLocation="http://www.it315.org/xmlbook/schema
+						http://www.it315.org/xmlbook.xsd 
+			              http://www.it315.org/demo/schema 
+                            http://www.it315.org/demo.xsd">
+	<书>
+		<书名>JavaScript网页开发</书名>
+		<作者>张孝祥</作者>
+		<售价 demo:币种="人民币">28.00元</售价>
+	</书>
+</书架>

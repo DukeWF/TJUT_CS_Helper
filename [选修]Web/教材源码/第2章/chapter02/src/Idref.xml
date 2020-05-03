@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE 联系人列表[
+    <!ELEMENT 联系人列表 ANY>
+    <!ELEMENT 联系人 (姓名,EMAIL)>
+    <!ELEMENT 姓名 (#PCDATA)>
+    <!ELEMENT EMAIL (#PCDATA)>
+    <!ATTLIST 联系人
+                编号 ID #REQUIRED
+               上司 IDREF #IMPLIED>
+     ]>
+<联系人列表>
+	<联系人 编号="id1">
+		<姓名>张三</姓名>
+		<EMAIL>zhang@itcast.org</EMAIL>
+	</联系人>
+	<联系人 编号="id2" 上司="id1">
+		<姓名>李四</姓名>
+		<EMAIL>li@itcast.org</EMAIL>
+	</联系人>
+</联系人列表>

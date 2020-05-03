@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: DSplit - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA47.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /Fp"Release/DSplit.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\BOOK about\code\完成的好\第四章灰度变换\DlgZhiFangTu.cpp"
+"D:\BOOK about\code\完成的好\第四章灰度变换\DynSplitView2.cpp"
+"D:\BOOK about\code\完成的好\第四章灰度变换\HuiDuBianHuanDib.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA47.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA48.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/DSplit.pdb" /machine:I386 /out:"Release/DSplit.exe" 
+".\Release\Cdib.obj"
+".\Release\DialogShuangYu.obj"
+".\Release\DlgChuangkoubianhuan.obj"
+".\Release\DlgGuDingFaZhi.obj"
+".\Release\DlgZhexianbianhuan.obj"
+".\Release\DlgZhiFangTu.obj"
+".\Release\DSplit.obj"
+".\Release\DSplitDoc.obj"
+".\Release\DSplitView.obj"
+".\Release\DynSplitterWnd.obj"
+".\Release\DynSplitView2.obj"
+".\Release\HuiDuBianHuanDib.obj"
+".\Release\MainFrm.obj"
+".\Release\StdAfx.obj"
+".\Release\DSplit.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPA48.tmp"
+<h3>Output Window</h3>
+Compiling...
+DlgZhiFangTu.cpp
+DynSplitView2.cpp
+HuiDuBianHuanDib.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+DSplit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

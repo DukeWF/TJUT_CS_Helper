@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" 
+                   "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>选择器</title>
+<style type="text/css">
+/* 1.类选择器的定义*/
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+.font18 {
+	font-size: 18px;
+}
+/* 2.id选择器的定义*/
+#bold {
+	font-weight: bold;
+}
+#font24 {
+	font-size: 24px;
+}
+</style>
+</head>
+<body>
+	<!--类选择器的使用-->
+	<h1 class="red">标题一：class="red"，设置文字为红色。</h1>
+	<p class="green font18">
+        段落一: class="green font18",设置文字为绿色，字号为18px。
+     </p>
+	<p class="red font18">
+        段落二: class="red font18",设置文字为红色，字号为18px。
+     </p>
+	<!--id选择器的使用-->
+	<p id="bold">段落1：id="bold"，设置粗体文字。</p>
+	<p id="font24">段落2：id="font24"，设置字号为24px。</p>
+	<p id="font24">段落3：id="font24"，设置字号为24px。</p>
+	<p id="bold font24">段落4：id="bold font24"，同时设置粗体和字号24px。</p>
+</body>
+</html>
+
