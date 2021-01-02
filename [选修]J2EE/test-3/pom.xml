@@ -74,17 +74,6 @@
 			<artifactId>spring-boot-starter-quartz</artifactId>
 			<version>2.0.0.BUILD-SNAPSHOT</version>
 		</dependency>
-<!-- security problem of axis -->
-<!-- 		<dependency>
-			<groupId>axis</groupId>
-			<artifactId>axis</artifactId>
-			<version>1.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.axis</groupId>
-			<artifactId>axis-jaxrpc</artifactId>
-			<version>1.4</version>
-		</dependency> -->
 		<dependency>
 			<groupId>commons-discovery</groupId>
 			<artifactId>commons-discovery</artifactId>
